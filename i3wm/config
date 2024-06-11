@@ -261,6 +261,3 @@ exec --no-startup-id i3-battery-popup
 bindsym $alt+f12 exec --no-startup-id maim "/home/$USER/Pictures/screenshots/$(date +%d-%b-%T)-Screenshot.jpg"
 bindsym $alt+comma exec --no-startup-id maim --window $(xdotool getactivewindow) "/home/$USER/Pictures/sreenshots/$(date +%d-%b-%T))-Screenshot.jpg"
 bindsym $alt+x exec --no-startup-id maim --select "/home/$USER/Pictures/screenshots/$(date +%d-%b-%T)-Screenshot.jpg"
-
-
-

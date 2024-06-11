@@ -1,4 +1,4 @@
-If you come from bash you might have to change your $PATH.
+# If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
@@ -111,4 +111,7 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-#
+source /usr/share/nvm/init-nvm.sh
+
+# Created by `pipx` on 2024-06-11 17:42:54
+export PATH="$PATH:/home/kamo/.local/bin"
