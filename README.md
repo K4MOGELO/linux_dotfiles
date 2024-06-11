@@ -2,6 +2,11 @@
 
 My Linux dotfiles repository! This repository contains configuration files for various applications and tools that I use on my Linux system.
 
+## script.py
+
+The `script.py` file is a Python script designed to automate the process of copying configuration files from their respective locations on my system to this repository, and then pushing the updates to GitHub. This script ensures that my dotfiles repository remains up-to-date with the latest configurations from my system.
+
+
 ## Folders
 
 - **i3wm:** Contains my configuration files for the i3 window manager.
