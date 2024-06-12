@@ -1,22 +1,16 @@
 import os
 import shutil
 import subprocess
+import json
 
-config_items = {
-    'i3wm/config': '~/.config/i3/config',
-    'i3wm/i3status.conf': '~/.config/i3status/config',
-    'lf': '~/.config/lf',
-    'others/.xprofile': '~/.xprofile',
-    'shell/.bashrc': '~/.bashrc',
-    'shell/.zshrc': '~/.zshrc',
-}
+with open('config_paths.json') as f:
+    config_paths = json.load(f)
 
-config_items = {key: os.path.expanduser(value) for key, value in config_items.items()}
-
+config_paths = {key: os.path.expanduser(value) for key, value in config_paths.items()}
 repo_base_path = os.path.dirname(os.path.abspath(__file__))
 
 def copy_items():
-    for dest, src in config_items.items():
+    for dest, src in config_paths.items():
         dest_path = os.path.join(repo_base_path, dest)
         src_path = os.path.abspath(src)
         os.makedirs(os.path.dirname(dest_path), exist_ok=True)
@@ -39,6 +33,7 @@ def push_to_github():
         subprocess.run(['git', 'add', '.'], check=True)
         subprocess.run(['git', 'commit', '-m', 'Update configuration files'], check=True)
         subprocess.run(['git', 'push'], check=True)
+
         print("Changes pushed to GitHub successfully")
     except subprocess.CalledProcessError as e:
         print(f"An error occurred: {e}")

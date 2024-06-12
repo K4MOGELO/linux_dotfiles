@@ -2,10 +2,11 @@
 
 My Linux dotfiles repository! This repository contains configuration files for various applications and tools that I use on my Linux system.
 
-## script.py
+## Synchronizing Configuration Files
 
-The `script.py` file is a Python script designed to automate the process of copying configuration files from their respective locations on my system to this repository, and then pushing the updates to GitHub. This script ensures that my dotfiles repository remains up-to-date with the latest configurations from my system.
+The `PushGithub.py` and `PullGithub.py` files are Python scripts designed to automate the process of synchronizing configuration files between your system and this repository. **PushGithub.py** copies configuration files from their respective locations on your system to the repository and pushes the updates to GitHub, ensuring your dotfiles repository remains current. Conversely, **PullGithub.py** pulls the latest changes from the GitHub repository and updates the configuration files on your system, ensuring your system configurations stay up-to-date with the repository.
 
+The `config_paths.json` file contains the paths of the configuration files and directories, which both scripts import to determine where to copy files from and to. Adjust the paths in this file as needed for your specific setup.
 
 ## Folders
 
