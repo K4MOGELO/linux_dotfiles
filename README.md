@@ -4,9 +4,9 @@ My Linux dotfiles repository! This repository contains configuration files for v
 
 ## Synchronizing Configuration Files
 
-The `PushGithub.py` and `PullGithub.py` files are Python scripts designed to automate the process of synchronizing configuration files between your system and this repository. **PushGithub.py** copies configuration files from their respective locations on your system to the repository and pushes the updates to GitHub, ensuring your dotfiles repository remains current. Conversely, **PullGithub.py** pulls the latest changes from the GitHub repository and updates the configuration files on your system, ensuring your system configurations stay up-to-date with the repository.
+The `PushGithub.py` and `PullGithub.py` files are Python scripts designed to automate the process of synchronizing configuration files between your system and this repository. **PushGithub.py** copies configuration files from their respective locations on your system to the repository and pushes the updates to GitHub, Conversely, **PullGithub.py** pulls the latest changes from the GitHub repository and updates the configuration files on your system.
 
-The `config_paths.json` file contains the paths of the configuration files and directories, which both scripts import to determine where to copy files from and to. Adjust the paths in this file as needed for your specific setup.
+The `config_paths.json` file contains the paths of the configuration files and directories.
 
 ## Folders
 
